@@ -169,11 +169,16 @@ teacher_booking
 
 | 用户  | 用户名      | 密码           |
 | --- | -------- | ------------ |
-| 管理员 | admin    | 首次启动初始化或自行配置 |
-| 教师  | teacher1 | 开发环境初始化      |
-| 家长  | parent1  | 开发环境初始化      |
+| 教师  | teacher1 | teacher123     |
+| 家长  | parent1  | parent123      |
 
-> ⚠️ 演示账号仅用于本地开发，请勿在生产环境使用默认密码。
+
+# 项目访问地址
+teacher-booking-steel.vercel.app
+
+teacher-booking-git-main-leexenos99-ygxws-projects.vercel.app
+
+teacher-booking-493q4suw4-leexenos99-ygxws-projects.vercel.app
 
 ---
 
