@@ -5,7 +5,7 @@
 # 构建阶段
 FROM maven:3.8.6-openjdk-17-slim AS builder
 
-WORKDIR /app
+WORKDIR /app/backend
 
 COPY backend/pom.xml .
 RUN mvn dependency:go-offline -B
@@ -23,7 +23,7 @@ RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 
 ENV SPRING_PROFILES_ACTIVE=prod
 
-COPY --from=builder /app/target/*.jar app.jar
+COPY --from=builder /app/backend/target/*.jar app.jar
 
 EXPOSE 8080
 
